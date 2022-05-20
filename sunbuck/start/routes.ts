@@ -32,6 +32,7 @@ Route.get('/', async ({request}) => {
   // return request method
   console.log("request method = " + request.method())
   return await Database.from('menu').select('*')
+  
 })
 
 // add menu into database
